@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con PHP</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body> 
+    <section>
+        <form class="register-form" method="POST" action="validacionformulario.php">
+
+            <h1>Formulario de registro</h1>
+
+            <div class="input-form-box">
+                <input type="text" name="nombre" id="nombre" required/>
+                <label for="nombre">Nombre<span><i> (Requerido)</i></span></label>
+            </div>
+
+            <div class="input-form-box">
+                <input type="text" name="apellido" id="apellido" required/>
+                <label for="apellido">Apellido<span><i> (Requerido)</i></span></label>
+            </div>
+
+            <div class="input-form-box">
+                <input type="email" name="email" id="email"/>
+                <label for="email">Email<span><i> (Requerido)</i></span></label>
+            </div>
+            
+            <input class="form-btn" name="submit" type="submit" value="Registrarse"/>
+
+        </form>              
+    </section>  
+</body>
+</html>
